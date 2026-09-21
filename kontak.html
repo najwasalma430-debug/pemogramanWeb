@@ -12,9 +12,9 @@
         <p>solusi transformasi bisnis digital anda di banjarmasin</p>
         <hr>
         <nav>
-            <a href="tentang.html">tentang founder</a> |
-            <a href="produk.html">katalog jasa & paket harga</a> |
-            <a href="kontak.html"><b>kontak & pemesanan</b></a> |
+            <a href="biodata_najwa.html">tentang founder</a> |
+            <a href="produk.html"><b>katalog jasa & paket harga</b></a> |
+            <a href="kontak.html">kontak & pemesanan</a> |
         </nav>
         <hr>
      </header>
@@ -31,12 +31,72 @@
                     <label for="nama_lengkap">nama lengkap / instansi:</label><br>
                     <input type="text" name="nama_lengkap" id="nama_lengkap"
                     placeholder="contoh: najwa salma alisa" size="40" required>
-                 </fieldset>
+                <br><br>
+
+                <label for="email_pemesan">alamat email aktif:</label><br>
+                <input type="email" name="email_pemesan" id="email_pemesan" placeholder="nama@domain.com" size="40" required>
+                <br><br>
+
+                <label for="no_whatapp">nomor whatsapp/hp</label><br>
+                <input type="tel" name="no_whatapp" id="no_whatapp" placeholder="085655663278" required>
+                <br><br>
+
+                <label>tipe kategori klien</label><br>
+                <input type="radio" id="kategori_personal" name="tipr_klien" value="personal" checked >
+                <label for="kategori_personal">perorangan / umkm </label>&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="tipr_klien" id="kategori_korporat" value="korporat">
+                <label for="kategori_korporat">perusahaan / instansi pemerintah</label>
+                <br><br>
+                </fieldset>
                  <br>
+                 <!-- grup 2: detail pemesanan layanan -->
+                 <fieldset>
+                    <legend><b>2. rincian pemesanan jasa digital</b></legend><br>
+                    <label for="pilih_paket">[ilih paket layanan (lihat katalog di halaman produk):</label><br>
+                    <select name="pilihan_paket" id="pilih_paket" required>
+                        <option value="">-- pilih paket jasa --</option>
+                        <option value="silver">paket silver branding (Rp. 1.500.000)</option>
+                        <option value="gold">paket gold web development (Rp.3.000.000)</option>
+                        <option value="platinum">paket platinum full digital transformation (Rp. 5.000.000)</option>
+                        <option value="custom">konsultasi custom project</option>
+                    </select>
+                    <br><br>
+
+                    <label>layanan tambahan (add-ons)</label><br>
+                    <input type="checkbox" name="addons[]" id="addon_seo" value="SEO optimization">
+                    <label for="addon_seo">optimasi SEO on-page (+ Rp.500.000)</label><br>
+                    <input type="checkbox" name="addons[]" id="addon_exspess" value="exspess delivery">
+                    <label for="addon_exspess">pengerjaan kilat 3 hari (+ Rp.750.000)</label><br>
+                    <input type="checkbox" name="addons[]" id="addons_content" value="content writing">
+                    <label for="addons_content">penulisan konten artikel & copuwriting (+ Rp 400.000)</label>
+                    <br><br>
+
+                    <label for="target_selesai">estimasi target selesai</label><br>
+                    <input type="date" name="target_selesai" id="target_selesai">
+                    <br><br>
+
+                    <label for="detail_pesanan">deskripsi/catatan khusus proyek</label><br>
+                    <textarea name="detail_pesanan" id="detail_pesanan" rows="6" cols="50" placeholder="tuliskan gambaran singkat mengenai proyek yang anda inginkan...."></textarea>
+                    <br><br>
+                 </fieldset>
                  <button type="submit"><b>kirim pemesanan sekarang</b></button>&nbsp;
                  <button type="reset">bersihkan formulir</button>
             </form>
-     </main>
+            <!-- bagian informasi alamat dan peta -->
+             <section>
+                <hr>
+                <h3>kantor & studio operasional</h3>
+                <p><b>poliban digicraft studio banjarmasin</b><br>
+                    gedung laboraturium bisnis digital, kampus politeknik negeri banjarmasin <br>
+                    Jl. brigjen H. hasan basri, kayutangi, banjarmasin, kalimantan selatan <br>
+                    email: <i>info@digicraftstudio.poliban.ac.id</i> | whatsapp: <i>0856-5566-3278</i>
+                </p>
 
+                <h4>lokasi studio di gogle maps</h4>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d694.0449173457672!2d114.57955140918902!3d-3.2945256663589184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2de423a80d47ba6b%3A0x8f5abfaddfe5a2d7!2sPoliteknik%20Negeri%20Banjarmasin!5e0!3m2!1sid!2sid!4v1789957042246!5m2!1sid!2sid" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        <footer>
+            <hr>
+            <p align="center">&copy; 2026 poliban digicraft studio - hak cipta dilindungi undang-undang.</p>
+        </footer>
 </body>
 </html>
