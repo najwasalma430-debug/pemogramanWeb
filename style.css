@@ -5,9 +5,9 @@
     --accent-color: #FF9800;
     --secondary-color: #1A252C;
     --bg-light: #F4F7F6;
-    --white: #FFFFFF;
+    --white: #fffffff3;
     --text-muted: #666666;
-    --border-color: #E0E0E0;
+    --border-color: #aedcb0;
     --shadow-soft: 0 4px 12px rgba(0,0,0,0.08);
     --shadow-hover: 0 8px 24px rgba(0,0,0,0.15);
     --transition-fast: all 0.3s ease;
@@ -76,6 +76,7 @@ nav a:hover, nav a.active {
 /* main content */
 main {
     padding: 40px 0;
+    background-color: var(--border-color);
 }
 .section {
     margin-bottom: 50px;
@@ -88,7 +89,7 @@ main {
 }
 .section-subtitle {
     text-align: center;
-    color: var(--text-muted);
+    color: var(--primary-dark);
     font-size: 0.95rem;
     margin-bottom: 30px;
 }
